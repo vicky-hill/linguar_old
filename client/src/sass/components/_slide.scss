@@ -1,0 +1,52 @@
+.slide-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 88vh;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 99;
+    transform: translateY(100%);
+    transition: all .5s;
+}
+
+.slide-in {
+    transform: translateY(0%);
+}
+
+
+// Slide container out
+.slide-out-page {
+    transform: translateX(-100%);
+}
+
+
+// Sliding container in
+.pre-slide-in-page { 
+    transform: translateX(20%);
+}
+
+.slide-in-page {
+    transform: translateX(0%);
+}
+
+
+// Desktop
+
+@media only screen and (min-width : $desktop) {
+    // Slide container out
+.slide-out-page {
+    transform: translateX(0%);
+}
+
+
+// Sliding container in
+.pre-slide-in-page { 
+    transform: translateX(0%);
+}
+
+.slide-in-page {
+    transform: translateX(0%);
+}
+}

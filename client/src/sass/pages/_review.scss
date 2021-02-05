@@ -1,0 +1,59 @@
+.review {
+    padding-top: 30vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 87vh;
+
+    .english-word {
+        margin-bottom: 5rem;
+        font-weight: 600;
+        font-size: 2.8rem;
+        z-index: 10;
+        transition: all 0.4s;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .small {
+        font-size: 1.8rem;
+        color: $grey-medium;
+        transform: translateY(-2rem);
+        font-weight: 400;
+    }
+
+    input[type=text] {
+        position: relative;
+        border: none;
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 700;
+        background-color: linen;
+        padding: 10rem 2rem;
+        top: -30%;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .correct {
+        color: #B8F18B;
+    }
+
+    .incorrect {
+        color: #F86A79;
+    }
+ 
+
+}
+
+.review-input:focus {
+    border: none !important;
+}

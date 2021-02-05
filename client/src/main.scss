@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@100;300;400;700;900&family=Lobster+Two&family=Open+Sans:wght@600;700&display=swap');
+
+// Base
+@import "sass/base/variables";
+@import "sass/base/reset";
+@import "sass/base/typogrophy";
+@import "sass/base/box";
+
+// Components 
+@import "sass/components/buttons";
+@import "sass/components/forms";
+@import "sass/components/cards";
+@import "sass/components/slide";
+
+// Layout
+@import "sass/layout/header";
+@import "sass/layout/footer";
+@import "sass/layout/edits";
+@import "sass/layout/settings";
+
+// Pages
+@import "sass/pages/landing";
+@import "sass/pages/vocabulary";
+@import "sass/pages/wordlist";
+@import "sass/pages/auth";
+@import "sass/pages/review";
+@import "sass/pages/conjugation";
+
+

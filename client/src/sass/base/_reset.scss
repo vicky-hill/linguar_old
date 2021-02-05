@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: Lato;
+}
+
+body {
+  position: relative;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.window {
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+
+.container {
+  height: 88vh;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+
+.scroll-container {
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+/* ===================================
+   Desktop
+==================================== */
+
+@media only screen and (min-width : $desktop) {
+
+  .container {
+    background-color: rgba($color: $grey-header, $alpha: .42);
+    padding: 0;
+    height: 88vh;
+    overflow: hidden;
+  }
+
+
+  .scroll-container {
+    height: 100%;
+    width: auto;
+    overflow: scroll;
+    padding: 0 25vw;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+  
+}

@@ -1,0 +1,79 @@
+.edit-form {
+    display: none;
+    position: relative;
+    margin: 0 2rem;
+    margin-top: 5rem;
+    border-radius: 7px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    form {
+        width: 29rem;
+
+        input[type="text"] {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .form-heading {
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+    }
+
+    &--close {
+        position: absolute;
+        color: $grey-black;
+        top: 2rem;
+        right: 2.6rem;
+        cursor: pointer;
+    }
+
+} 
+
+.show-edit-form {
+    display: block;
+}
+
+.full-screen {
+    display: block;
+    margin: 40% 1rem;
+
+    form {
+        width: 29rem;
+    }
+
+    &--close {
+        position: fixed;
+        top: 5vh;
+        right: 5vh;
+        font-size: 2rem;
+    }
+}
+
+
+
+/* ===================================
+   Desktop
+==================================== */
+
+
+@media only screen and (min-width : $desktop) {
+
+    .full-screen {
+        margin: 18% 5rem;
+
+        form {
+            width: 22rem;
+    
+            input[type="text"] {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &--close {
+            position: absolute;
+            top: 2rem;
+        }
+    }
+
+}

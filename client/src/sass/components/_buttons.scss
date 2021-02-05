@@ -1,0 +1,42 @@
+// Transparent button
+.transparent-btn {
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    color: $gold-primary;
+    vertical-align: middle;
+    font-size: 1.6rem;
+                  
+    p {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 2rem;
+        transform: translateY(2px);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+.btn {
+    font-family: inherit;
+    border: none;
+    background-color: $gold-primary;
+    color: white;
+    font-weight: 700;
+    padding: 1.4rem 3rem;
+    border-radius: 9px;
+    margin-top: 1.5rem;
+    border: 2px solid white;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active, &:focus {
+        outline: none;
+        border: 2px solid  #fdedbf;
+    }
+}

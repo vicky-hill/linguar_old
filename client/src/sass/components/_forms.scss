@@ -1,0 +1,147 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 100;
+
+    .form-heading {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        color: $grey-black;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    & button {
+        width: 100%;
+        border: none;
+        background-color: $gold-primary;
+        color: white;
+        font-weight: 700;
+        padding: 1.4rem;
+        border-radius: 9px;
+        margin-top: 1.5rem;
+        border: 2px solid white;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active, &:focus {
+            outline: none;
+            border: 2px solid  #fdedbf;
+        }
+    }
+    input[type=text], input[type=password] {
+        font-size: 1.4rem;
+        width: 100%;
+        font-family: inherit;
+        margin-bottom: 2.5rem;
+        border: 1px solid #dddddd;
+        padding: 1.1rem 1.5rem;
+        border-radius: 5px;
+        color: $grey-black;
+        -webkit-appearance: none;
+    
+        &:focus {
+            outline: none;
+            border: 1px solid   #d1d0d0;
+        }
+    
+        &::placeholder {
+            color: #d1cfcf;
+        }
+    }
+    
+    .form-heading {
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    
+
+
+}
+
+
+
+// Desktop
+
+@media only screen and (min-width : $desktop) {
+    
+    .form-container {
+
+        input[type=text], input[type=password] {
+            padding: 0.7rem 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            margin-top: 1.2rem;
+            padding: 1.2rem;
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+/* ===================================
+   Rounded input
+==================================== */
+
+.rounded-input {
+    -webkit-appearance: none;
+    border:none;
+    box-shadow: 0 0px 7px rgba(40,75,124,.15);
+    font-family: inherit;
+    padding: 1rem 1.7rem;
+    font-size: 1.6rem;
+    padding-left: 4.8rem;
+    border-radius: 50px;
+    color: $grey-black;
+
+    &::placeholder {
+        color: $grey-light;
+    }
+}    
+
+.input-icon {
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    color: $grey-medium;
+}
+
+.rounded-input:focus, button {
+    outline: none;
+}
+
+
+// Desktop
+
+@media only screen and (min-width : $desktop) {
+
+    .rounded-input {
+        border: none;
+        padding: 1rem 1.2rem;
+        padding-left: 3.7rem;
+        font-size: 1.4rem;
+    }
+
+    .input-icon {
+        top: 0px;
+        left: 2.9rem;
+        font-size: 1.4rem;
+    }
+    
+}

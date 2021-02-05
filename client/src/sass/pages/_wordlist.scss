@@ -1,0 +1,155 @@
+.wordlist-header_add-button {
+    position: relative;
+    display: block;
+    margin-left: auto;  
+    top: 1rem;
+}
+
+.wordlist-header_grey-box {
+    margin-top: 2rem;
+}
+
+.word-list { 
+    background-color: rgba($color: $grey-header, $alpha: .42);
+    height: auto;
+    width: 100vw;
+    padding: 1rem 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-top: 3px solid rgba($color: $grey-header, $alpha: .42);
+    margin-bottom: 5rem;
+
+    &_item {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1.6rem;
+        margin-bottom: 0rem;
+        margin-top: 1rem;
+        padding: 1.2rem 2.3rem;
+        border-radius: 6px;
+        box-shadow: 0 0 8px rgba(40,75,124,.08);
+        color: $grey-black;
+
+        &--text {
+            h3 {
+                margin-bottom: .5rem;
+                font-size: 1.4rem;
+            }
+
+            p {
+                color: $grey-light;
+                font-size: 1.3rem;
+                font-weight: 500;
+            }    
+        }
+
+        &--edits {
+            font-size: 1.8rem;
+            margin-right: 1rem;
+            transform: translateX(220%);
+            transition: all .3s;
+
+            .fa-edit {
+               color: $grey-dark; 
+               margin-right: 2rem;
+            }
+
+            .fa-trash-alt {
+                color: #F86A79;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.show-edits &--edits {
+            transform: translateX(0);
+        }
+    }
+
+  
+}
+
+.show-edits {
+    transform: translateX(0);
+    // margin-left: 1rem;
+    // margin-top: 2rem;
+}
+
+
+/* ===================================
+   Desktop
+==================================== */
+
+@media only screen and (min-width : $desktop) {
+    .wordlist-header--desktop {
+        display: block;
+    }
+
+    .wordlist-header_grey-box {
+        margin-top: 0rem;
+    }
+
+    .wordlist-header_group {
+        display: flex;
+    }
+
+    .wordlist-header_add-button {
+        display: none;
+    }
+
+    .word-list {
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &_item {
+            width: 45%;
+
+            &--edits {
+                display: none;     
+                transform: translateX(0%);
+           
+                .inline {
+                    display: inline-block;
+                }
+
+                .fa-edit, .fa-trash-alt {
+                    color: $grey-light;
+                    transition: all .2s;
+                }
+
+                .fa-edit {
+                   margin-right: 1.5rem;
+
+                   &:hover {
+                       color: $grey-dark;
+                   }
+                }
+
+                .fa-trash-alt:hover {
+                    color: #F86A79;
+                }
+            }
+        }
+    }
+
+    // hover over word item to show edits
+    .word-list_item:hover > .word-list_item--edits {
+        display: inline-block;
+    }
+    
+    // hover over list title to show edits
+    .heading_grey-box_title:hover > .word-list_item--edits {
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+}

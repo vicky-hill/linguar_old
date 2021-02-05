@@ -1,0 +1,150 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    box-shadow: 0 2px 10px rgba(40,75,124,.08);
+    background-color: $grey-header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+    h1 {
+        font-family: Lobster Two;
+        color: white;
+        color: $grey-black;
+        font-weight: 400;
+        margin: auto;
+        transition: all .5s;
+    }
+}
+
+
+.hamburger {
+    z-index: 1000;
+    position: absolute;
+    right: 12%;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-line {
+        width: 3rem;
+        height: 2px;
+        background-color: white;
+        background-color: $grey-black;
+        margin: 3px;
+        border-radius: 1.5rem;
+    }
+}
+
+.nav {
+    display: none;
+    justify-self: right;
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+    text-align: right;
+    padding: 0 3rem;
+
+    &-link {
+        color: $grey-black;
+        margin-left: 4rem;
+        font-size: 1.7rem;
+
+        &--user {
+            margin-left: 0;
+        }
+
+        &--signin {
+            position: absolute;
+            right: 10rem;
+        }
+    }
+
+    img {
+        position: relative;
+        height: 5rem;
+        margin-left: 4.5rem;
+        top: -5px;
+    }
+
+    .fa-sign-in-alt, .fa-user-plus {
+        color: $gold-primary;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    .fa-sign-in-alt {
+        font-size: 2.2rem;
+    }
+    
+}
+
+.dictionary-searchbar {
+    display: none;
+    width: 45rem;
+
+    form {
+        input[type="text"] {
+            border: 1px #DAD8DB solid;
+            box-shadow: none;
+        }
+    }
+
+}  
+
+
+.logout {
+    display: none;
+    position: absolute;
+    transform: translateX(-4.5rem);
+    margin-top: 2rem;
+    color: $grey-black;
+    border: gainsboro 1px solid;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow:0 0px 7px rgba(40,75,124,.15);
+
+    &:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+.show-logout {
+    display: block;
+}
+
+/* ==========================================
+    Desktop
+========================================== */
+
+
+@media only screen and (min-width : $desktop) {
+    
+    .hamburger {
+        display: none;
+    }
+
+    .nav, .dictionary-searchbar {
+        display: flex;
+    }
+
+    .header {
+        background-color: #fff;
+        // background-color: $grey-black;
+        justify-content: space-around;
+
+        h1 {
+            font-size: 4rem;
+            position: relative;
+        }
+    }
+
+    
+}

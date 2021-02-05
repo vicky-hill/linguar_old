@@ -1,0 +1,52 @@
+.footer-top, .footer-bottom {
+    border-top: 1px solid $grey-light;
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    
+    h5 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-right: auto;
+        color: #333;
+    }
+
+    .icon {
+        height: 3rem;
+        margin-right: 2rem;
+    }
+
+    .chevron {
+        height: 2rem;
+        justify-self: flex-end;
+    }
+
+    #speechbubble {
+        margin-left: 1px;
+        height: 3.2rem;
+    }
+
+}
+
+.footer-top {
+    grid-row: 4/5;
+}
+
+.footer-bottom {
+    grid-row: 5/6;
+}  
+
+
+/* ==========================================
+    800px
+========================================== */
+
+
+@media only screen and (min-width : $desktop) {
+    
+    .footer-top, .footer-bottom {
+        display: none;
+    }
+
+    
+}

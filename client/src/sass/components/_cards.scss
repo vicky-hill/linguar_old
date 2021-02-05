@@ -1,0 +1,125 @@
+
+/* ===================================
+   Heading grey box
+==================================== */
+
+.heading_grey-box {
+    padding: 2rem 3rem;
+    overflow: hidden;
+
+    &_group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem 0;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+    }
+
+    &_title {
+        display: inline-block;
+        margin-right: auto;
+        color: $gold-primary;
+        font-weight: 800;
+        font-size: 3rem;
+    }
+
+    &_subtitle {
+        padding: 0 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+        color: $grey-dark;
+        font-weight: 400;
+    }
+        
+    .small {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    &_input {
+        width: 100%;
+    }
+
+}
+
+
+
+// Desktop
+
+@media only screen and (min-width : $desktop) {
+
+
+    .heading_grey-box {
+        padding: 0 1.2rem;
+
+        &--desktop {
+            margin-top: 6rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            background-color: rgba($color: #f2f2f2, $alpha: .43);
+            width: 100%;
+            border-radius: 5px;
+            padding: 2.6rem 3rem;
+            padding-right: 5rem;
+        }
+
+        &_group {
+            display: inline-block;
+            vertical-align: middle;
+
+            button {
+                margin-bottom: 1rem;
+                margin-left: 2rem;
+                font-size: 1.5rem;
+
+                p {
+                    font-size: 1.5rem;
+                    transform: translateY(1px);
+                }
+            }
+        }
+
+        &_title {
+            font-size: 2.5rem;
+        }
+
+        form {
+            display: inline-block;
+        }
+
+        &_input {
+            width: 27rem;
+            border: none;
+            box-shadow: 0 2px 10px rgba(40,75,124,.08);
+        }
+    }
+    
+  }
+
+
+
+  /* ===================================
+     Yellow stitched
+  ==================================== */
+
+  .stitched-box {
+    border: none;
+    padding: 4rem;
+    border-radius: 2rem;
+  }
+
+
+// Desktop
+
+@media only screen and (min-width : $desktop) {
+    .stitched-box {
+        background-color: white;
+        padding: 7rem 6rem;
+        border: 2px $gold-light dashed;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,59 @@
+.form-icon {
+    position: relative;
+    height: 10rem;
+    margin-bottom: 3rem;
+    left: 2%;
+}
+
+.auth {
+    margin-top: 9vh;
+    display: flex;
+
+    .form-container {
+        position: relative;
+        top: -1.7rem;
+        margin: auto 0;
+    }
+
+    .register {
+        position: relative;
+        top: -2.3rem;
+    }
+}
+
+.guest-login-box {
+    margin-top: 3rem;
+    transition: all .2s;
+
+    &:hover {
+        cursor: pointer;
+        color: $gold-dark;
+    }
+}
+
+.guest-login {
+    margin-bottom: 1rem;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+// Desktop
+
+@media only screen and (min-width : $desktop) {
+    .form-icon {
+        height: 7rem;
+    }
+
+    .auth {
+        position: relative;
+        width: 38rem;
+        height: 52rem;
+    }
+
+
+}
